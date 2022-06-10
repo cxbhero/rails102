@@ -33,7 +33,7 @@ class GroupsController < ApplicationController
 
     @group.destroy
     flash[:alert] = "Group deleted"
-    redirect_to groups_path
+    redirect_to root_path, status: :see_other
  end
 
  private

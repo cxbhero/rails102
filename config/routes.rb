@@ -4,9 +4,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root "groups#index"
   resources :groups do
       resources :posts
   end
-  root 'groups#index'
+
 
 end
